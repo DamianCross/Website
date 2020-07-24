@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Damian Cross's Portfolio</title>
+			<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+			<link rel="stylesheet" type = "text/css" href="styles.css">
+			<script src="scripts.mjs"></script>
+		</head>
+
+
+		<body>
+			<div class="sidenav" id="mySidenav">
+				<a href="javascript:void(0)" class="closebutton" onclick="closeNav()">&times;</a>
+				<p>Personal</p>
+				<ul class="menulist">
+					<li><span><a href="index.html">Home</a></span></li>
+					<li><span><a href="aboutme.html">About Me</a></span></li>
+					<li><span><a href="whatidonow.html">What I Do Now</a></span></li>
+					<li><span><a href="resume.html">Resume</a></span></li>
+				</ul>
+				<p>Design Projects</p>
+				<ul class="menulist">
+					<li><span><a href="ascitesshunt.html">Biopowered Ascites Shunt</a></span></li>
+					<li><span><a href="oystercultivation.html">Oyster Cultivation Environment</a></span></li>
+					<li><span><a href="microgravityenvironment.html">Microgravity Cell Culture Environment</a></span></li>
+					<li><span><a href="eggtransportvehicle.html">Egg Transport Vehicle</a></span></li>
+					<li><span><a href="gravityvehicle.html">Gravity Vehicle</a></span></li>
+					<li><span><a href="rubegoldberg.html">Rube Goldberg Machine</a></span></li>
+				</ul>
+				<br>
+				<br>
+				<br>
+				<div class="email">					
+					<p>Contact Me:</p>
+					<p>djcross35@gmail.com</p>
+				</div> 			
+			</div>
+
+			
+			<div class="main" id="main">
+				<span style= "font-size:30px;cursor:pointer"onclick="openNav()">&#9776; Menu</span>
+				<hr2></hr2>
+				<div class="main-title-1">
+					<p>Egg Transport Vehicle</p>
+				</div>
+				<div class="main-title-2">
+					<p>The Problem</p>					
+				</div>
+				
+				<div class="main-row-3">
+					<div>
+						<p>Design, build, and test a mechanical device that uses the energy from a falling mass to transport an egg along a track as quickly as possible and stop as close to the center of a terminal barrier without cracking the egg. The barrier's location is unknown prior to the competition and can be between 9-12m. Competitors who complete the bonus of traveling around the predetermined obstacle will be placed higher than those who travel in a straight line.</p><br>
+						<p>Constraints:</p>
+						<ul>
+							<li>All energy must come from a falling mass <= 2kg </li>
+							<li>The system’s dimensions must be no greater than: W = 0.75m, L = 1.0m, H = 1.0m</li>
+							<li>No electrical or electronic devices may be used </li>
+							<li>The vehicle must not be remotely controlled or tethered</li>
+						</ul>
+					</div>
+					
+					<span class="center-image"><img src="images/scramblertrack.png" alt=""></span>
+				</div>
+				
+				<div class="main-title-2">
+					<p>Solution</p>					
+				</div>
+				
+				<div class="main-row-1">
+					<span class="center-image"><img src="images/launcher.jpg" alt=""></span>
+
+					<div>
+						<p>The device consists of a launcher, a vehicle, a scope for alignment, and a falling mass & release mechanism. As the mass falls, it extends and stores its energy in a spring. As the mass reaches the end of its travel and triggers the release mechanism, the vehicle is launched forward with the energy stored in the spring. </p><br>
+
+						<p>General Construction:</p>
+
+						<ul>
+							<li>Frame: manufactured out of oak to ensure the launcher was stable and heavy enough to withstand the tensile forces during launch.</li>
+
+							<li>Falling Mass: consists of lead shot within a pipe, which creates a smaller profile. This allows the mass to fall a greater distance, which will result in more energy available for launching the vehicle. </li>
+
+							<li>Vehicle: created out of aluminum to be lightweight, able to withstand the tensile forces from the spring, and easily machinable.</li>
+
+							<li>Spring: made out of music wire, giving it a greater elastic limit and a higher Young's Modulus.</li>
+						</ul>
+					</div>
+
+					<p>
+
+					</p>
+				</div>		
+
+				<hr2></hr2>
+
+				<div class="main-row-1">
+					
+					<div>
+						
+						<p1>Energy Transfer System</p1>
+						
+
+						<p>To utilize the full gravitational potential energy (GPE) of the mass while reducing vehicle travel time, the entirety of this energy must be transferred prior to the 0.5m line (as timing only begins once the vehicle passes this point). As the mass falls at most 1m, its GPE cannot be directly transferred to the vehicle within 0.5m. </p><br>
+
+						<p>To overcome this, the GPE of the mass was firstly stored in an extension spring by means of a block and tackle system with an ideal mechanical advantage of 4. An IMA of 4 was chosen because, ideally, 1m/4 = 0.25m < 0.5m. This would bring the vehicle to its top speed before timing begins while reducing the overall dimensions and weight of the vehicle. I could have used an IMA of 2 to launch the vehicle exactly as it passes the timing point (1m/2=0.5m). However, this would force the vehicle to be at least 0.5m in length (as it needs to be pulled for this distance) and would therefore increase its weight. </p><br>
+
+						<p>Because the mass itself has a height, it realistically can fall 0.8m. This video (right) demonstrates how the spring elongates about 20 cm as the mass falls about 80 cm, demonstrating an IMA of 4 for the pulley system. As the mass is lowered, the tension in the string rises, evidenced by the rising frequency of the emitted sound as it is plucked.</p><br>
+
+					</div>
+											
+	
+					<div class="videowrapper">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/lULDzn9SEQg" frameborder="0" allowfullscreen></iframe>
+					</div>
+
+				</div>
+				
+				<hr2></hr2>
+
+				<div class="main-row-empty">
+					<div>
+						<p1>Release Mechanism</p1>
+						<p>A pin holding the mass is pulled out. As the mass reaches the end of its vertical travel, it pulls on and unscrews a C-clamp that holds the vehicle in place during the extension of the spring. The vehicle can launch once the clamp is no longer holding it in place. </p>
+					</div>	
+				</div>
+
+				<div class="main-row-1">			
+				
+					<div class="videowrapper">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/hI0hMbRolVo" frameborder="0" allowfullscreen></iframe>
+					</div>
+
+					<div class="videowrapper">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/q6IT9y8VP5k" frameborder="0" allowfullscreen></iframe>
+					</div>
+					
+				</div>
+				
+				<hr2></hr2>
+
+				<div class="main-row-1">
+					<span class="center-image"><img src="images/scramblervehicle.jpg" alt=""></span>
+					
+					<div>
+						<p1>Vehicle</p1>
+							
+						<p>I designed the vehicle with the pulley system in mind. As I expected the mass to fall 80cm and elongate the spring by 20cm, I required a pulling distance of at least 20cm (i.e. the spring pulls the vehicle this amount). Taking into account the front and rear axles, the total vehicle length was ~30cm. Based on previous iterations of the vehicle, it was apparent that a length to width ratio of ~2:1 would prevent the car from turning unpredictably due to variations in the track surface, resulting in a width of 15cm. </p><br>
+
+						<p>The spring pulled on a “table” or, in the final iteration, a “fin”, that was situated on the vehicle. This added rigidity to the vehicle and also ensured that its main body would not feel the high tensile forces. </p>
+					
+					</div>
+					
+				</div>
+
+				<hr2></hr2>
+				
+				<div class="main-row-1">
+					
+					
+					<div>
+
+						<p1>Distance Calibration</p1>
+
+						<p>As the terminal barrier’s location is unknown prior to the competition, the vehicle must be built to travel and stop at a range of distances. A threaded axle and “locknut” style braking system was utilized for this. </p><br>
+
+						<p>However, instead of a typical locknut, a machined block with spring plungers was used. This block runs into a rotating disk along the same axis, after which the front axle would not be able to turn. The front axle was made to be differential to enable the front wheels to rotate at different speeds as they travel along the curved path. </p><br>
+
+						<p>Spring plungers were implemented to increase accuracy. They increase the time and decrease the force of the impulse imparted by the braking mechanism, making the vehicle less prone to skidding and allowing it to come to a more gradual, accurate stop.</p><br>
+
+						<p>Prior to the competition, over 300 trial runs were completed to collect data and understand the relationship between wheel turns and stopping distance.</p>
+					</div>
+
+					<div class="videowrapper">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/DEWbjK6315w" frameborder="0" allowfullscreen></iframe>
+					</div>
+
+					
+				</div>
+
+				<hr2></hr2>
+
+				<div class="main-row-empty">
+					<div>
+						<p1>Arc Calibration</p1>
+						<p>The obstacle is always placed half-way between the start point and the center of the terminal barrier. Therefore, not only must the vehicle travel different distances, it must also follow different arcs.</p><br>
+							
+						<p>To calibrate for this, the vehicle was designed with a single rear wheel that could pivot. The pivot amount was specified by extending a micrometer various lengths.</p><br>
+	
+						<p>Similar to the distance calibration, trials runs were completed to collect data and understand the relationship between micrometer distance and arc radius.</p>
+					</div>
+				</div>
+
+				<div class="main-row-1">
+										
+					<div class="videowrapper">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/0LzQa5FdeB8" frameborder="0" allowfullscreen></iframe>
+					</div>
+
+					<div class="videowrapper">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/0F39laTz_rY" frameborder="0" allowfullscreen></iframe>
+					</div>
+					
+				</div>
+				
+				<hr2></hr2>
+
+				<div class=main-row-empty>
+					<p1>Example Runs</p1>
+				</div>
+
+				<div class="main-row-2-titles">					
+					<p4>Trial Runs</p4>
+
+					<p4>Third Place at Nationals</p4>
+
+					<p4>Results: 2.35 seconds, 2.8cm </p4>						
+				</div>
+								
+				<div class="main-row-2">
+					<div class="videowrapper2">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/oc38_Zef3pw" frameborder="0" allowfullscreen></iframe>
+					</div>
+
+					<div class="videowrapper2">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/3rZLKugZBXM" frameborder="0" allowfullscreen></iframe>
+					</div>
+					
+					<span class="center-image"><img src="images/natsrun.jpg" alt=""></span>
+				</div>
+				
+				<hr2></hr2>					
+								
+			</div>	
+
+		</body>
+	</html>

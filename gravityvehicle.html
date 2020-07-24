@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Damian Cross's Portfolio</title>
+			<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+			<link rel="stylesheet" type = "text/css" href="styles.css">
+			<script src="scripts.mjs"></script>
+		</head>
+
+
+		<body>
+
+			<div class="sidenav" id="mySidenav">
+				<a href="javascript:void(0)" class="closebutton" onclick="closeNav()">&times;</a>
+				<p>Personal</p>
+				<ul class="menulist">
+					<li><span><a href="index.html">Home</a></span></li>
+					<li><span><a href="aboutme.html">About Me</a></span></li>
+					<li><span><a href="whatidonow.html">What I Do Now</a></span></li>
+					<li><span><a href="resume.html">Resume</a></span></li>
+				</ul>
+				<p>Design Projects</p>
+				<ul class="menulist">
+					<li><span><a href="ascitesshunt.html">Biopowered Ascites Shunt</a></span></li>
+					<li><span><a href="oystercultivation.html">Oyster Cultivation Environment</a></span></li>
+					<li><span><a href="microgravityenvironment.html">Microgravity Cell Culture Environment</a></span></li>
+					<li><span><a href="eggtransportvehicle.html">Egg Transport Vehicle</a></span></li>
+					<li><span><a href="gravityvehicle.html">Gravity Vehicle</a></span></li>
+					<li><span><a href="rubegoldberg.html">Rube Goldberg Machine</a></span></li>
+				</ul>
+				<br>
+				<br>
+				<br>
+				<div class="email">					
+					<p>Contact Me:</p>
+					<p>djcross35@gmail.com</p>
+				</div> 			
+			</div>
+
+			
+			<div class="main" id="main">
+				<span style= "font-size:30px;cursor:pointer"onclick="openNav()">&#9776; Menu</span>
+				<hr2></hr2>
+				<div class="main-title-1">
+					<p>Gravity Vehicle</p>
+				</div>
+				<div class="main-title-2">
+					<p>The Problem</p>					
+				</div>
+				
+				<div class="main-row-3">
+					<div>
+						<p>Design, build, and test one vehicle and ramp that uses gravitational potential energy as the vehicle’s sole means of propulsion to reach a Target Point as quickly, as accurately, and as close to a predicted time as possible.</p><br> 
+						
+						<p>The Target Distance is announced the morning of the competition and can be between 5-10m. The score calculation favors lower vehicle release heights, as higher velocities and faster times are harder to achieve. </p><br>
+
+						<p>Constraints:</p>
+						<ul>
+							<li>The vehicle’s mass must not exceed 1.5kg</li>
+							<li>The system’s dimensions must be no greater than: W = 0.50m, L = 0.75m, H = 2.0m</li>
+							<li>The measurement point on the vehicle is defined as the end of a bent paperclip</li>
+							<li>No electrical or electronic devices may be used </li>
+							<li>The vehicle must not be remotely controlled or tethered</li>
+						</ul><br>
+					</div>
+					
+					<span class="center-image"><img src="images/gravitytrack.png" alt=""></span>
+				</div>
+				
+				<div class="main-title-2">
+					<p>Solution</p>					
+				</div>
+				
+				<div class="main-row-1">
+					<div>
+						<p1>Ramp</p1>
+
+						<p>The shape of the ramp was designed to be a brachistochrone curve, as this is the curve of fastest decent and results in a decreased travel time.</p><br>
+
+						<p>As the rules favor a lower release height as well as a faster travel time (which are inversely related), each target distance has an ideal release height. To implement this, I created an adjustable release to optimize the total score for each distance (implemented with a release bracket and groove that follows the shape of the ramp). By curve-fitting data from over 200 trial runs, I determined the ideal release height for any assigned distance and the predicted times for each distance.</p>
+					</div>
+					
+					<span class="center-image"><img src="images/ramp.jpg" alt=""></span>					
+				</div>		
+
+				<hr2></hr2>
+
+				<div class="main-row-2">
+					<span class="center-image"><img src="images/gravityvehicle.jpg" alt=""></span>
+
+					<span class="center-image"><img src="images/gravityvehiclemass.png" alt=""></span>
+
+					<div>
+						<p1>Vehicle</p1>
+
+					<p>The vehicle was designed with a length to width ratio of roughly 2:1; from experience, this makes the vehicle less susceptible to turning unpredictably due to variations in the track surface.</p><br>
+
+					<p>The frame was machined out of aluminum with minimal surface area to reduce its weight while being rigid enough to withstand the forces during launching and braking. By reducing the mass of the frame as much as possible, I was able to allocate the rest of the 1.5kg mass limit to the top of the vehicle. This increased the gravitational potential energy of the vehicle.</p>
+					</div>
+				</div>
+				
+				<hr2></hr2>
+
+			
+				<div class="main-row-1">
+					<div>
+						<p1>Distance Calibration</p1>
+							
+						<p>A threaded axle and lock-nut style braking system was used. In addition, a carbon fiber rod that crossed into the path of the locknut’s wing was implemented to increase the time and decrease the force of the impulse imparted by the braking mechanism. This made the vehicle less prone to skidding and allowed it to come to a more gradual, accurate stop.</p>
+					
+					</div>
+					
+					<span class="center-image"><img src="images/braking.png" alt=""></span>					
+				</div>
+
+				<hr2></hr2>
+
+				<div class="main-row-1">						
+					<span class="center-image"><img src="images/measurementpoint.png" alt=""></span>
+
+						
+					<div>
+						<p1>Measurement Point</p1>
+						<p>Parameters define the measurement point of the car to be the tip of a paperclip. The paperclip is on a swivel (by loosening the wing nut, the wooden swivel can freely extend to any point within its reach). As competitors are given two runs during competition, I can ensure a near perfect second run distance given that the target point is within the range of the sweeping paperclip.</p>
+					</div>
+
+				</div>
+			
+				<hr2></hr2>
+
+
+				<div class="main-row-empty">
+					<p1>Example Runs</p1>
+					<p>These are example trial runs used to understand the relationships between wheel turns/travel distance and ramp height/travel time. Ultimately, we finished 6th place at the national competition.</p>
+				</div>
+
+											
+				<div class="main-row-2">
+					<div class="videowrapper2">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/EBbN0YKWLME" frameborder="0" allowfullscreen></iframe>
+					</div>
+
+					<div class="videowrapper2">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/3A-4YnH6HHM" frameborder="0" allowfullscreen></iframe></iframe>
+					</div>
+					
+					<div class="videowrapper2">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/5LUKPLxpJw0" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				
+				<hr2></hr2>		
+								
+			</div>	
+
+		</body>
+	</html>
